@@ -1,0 +1,228 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: black;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 5% 5%;
+}
+
+/* cabecalho */
+
+.container__cabecalho {
+    width: 100%;
+    background: url(../assets/Background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 89vh;
+}
+
+.titulo__combo--cabecalho {
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    font-weight:700;
+}
+
+.caixa__cabecalho {
+    display: flex;
+    flex-direction: column;
+    width: 575px;
+    text-align: center;
+    row-gap: 22px;
+    align-items: center;
+    padding-top: 125px;
+
+}
+
+.imagem__combo--cabecalho {
+    width: 348px;
+}
+
+.botao__assinar--cabecalho {
+    color: white;
+    background: #167bf7;
+    padding: 16px;
+    border-radius: 8px;
+    width: 85%;
+    font-weight: 400;
+    font-family: 'Inter';
+    cursor: pointer;
+}
+
+.botao__aluramais--cabecalho {
+    color:white;
+    background: none;
+    padding: 16px;
+    border-radius: 8px;
+    width: 85%;
+    font-weight: 400;
+    border: 1px solid white;
+    font-family: 'Inter';
+    cursor: pointer;
+}
+
+.botao__link--cabecalho:hover {
+    transform: scale(1.1);
+    transition: 0.35s;
+
+}
+
+.condicao__assinatura--cabecalho {
+    color: #c0c0c0;
+    font-size: 0.75rem;
+}
+
+/* principal */
+
+.container__responsivo {
+    display: flex;
+    align-items: center;
+    margin: 151px 0;
+}
+
+.imagem__plataformas {
+    margin-left: 165px;
+}
+
+.caixa__responsivo {
+    width: 588px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.titulo__assista__responsivo--main, .titulo__baixe--main {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.paragrafo__assista__responsivo--main {
+    color: #d3d3d3;
+    font-size: 1rem;
+    font-weight: 400;
+} 
+
+.paragrafo__combo--main, .paragrafo__baixe--main {
+    font-size: 1rem;
+    font-weight: 400;
+    color:#d3d3d3;
+}
+
+.botao__assinar__combo--main {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    padding: 16px;
+    background-color:#167bf7;
+    width: 160px;
+    text-align: center;
+    border-radius: 8px;    
+}
+
+.botao__assinar__combo--main:hover {
+    transform: scale(1.1);
+    transition: 0.35s;
+}
+
+.titulo__dispositivos--main {
+    color:white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.caixa__dispositivos {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+        "img-tv img-pc img-celular"
+        "tv pc celular";
+    text-align: center;
+    padding: 40px 0 16px 0;
+}
+
+.imagem__tv--main {
+    grid-area: img-tv;
+}
+
+.imagem__pc--main {
+    grid-area: img-pc;
+} 
+.imagem__celular--main {
+    grid-area: img-celular;
+}
+
+.nome__tv--main {
+    color:white;
+    text-align: center;
+    grid-area: tv;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nome__computador--main {
+    color: white;
+    grid-area: pc;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nome__celular--main {
+    grid-area: celular;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Footer */
+
+.container__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+    margin: 0 140px 90px 140px;
+    text-align: center;
+}
+
+.imagem__logo--footer {
+    width: 7%;
+    margin-bottom: 16px;
+}
+.lista__termos--footer {
+    color: white;
+    display: flex;
+}
+
+.item__termos--footer {
+    padding-left: 16px;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.link__item--footer {
+    text-decoration: none;
+    color: white;
+}
+
+.link__item--footer:hover {
+    color: blue;
+    transition: 0.25s;
+}
+
+.link__item--footer:active {
+    color: purple;
+}
+
+.paragrafo__copyright--footer {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #c0c0c0;
+}
